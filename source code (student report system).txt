@@ -1,15 +1,10 @@
 
-//             ----     HEADER FILE USED IN PROJECT   ----
-
-
 #include<fstream.h>
 #include<iomanip.h>
 #include<stdio.h>
 #include<conio.h>
 
 
-
-//             ----      CLASS USED IN PROJECT    ----
 
 
 class student
@@ -19,13 +14,13 @@ class student
 	int p_marks, c_marks, m_marks, e_marks, b_marks;
 	float per;
 	char grade;
-	void calculate();	//function to calculate grade
+	void calculate();	
 public:
-	void getdata();		//function to accept data from user
-	void showdata();	//function to show data on screen
+	void getdata();		
+	void showdata();	
 	void show_tabular();
 	int retrollno();
-}; //class ends here
+}; 
 
 
 void student::calculate()
@@ -93,23 +88,21 @@ int  student::retrollno()
 
 
 
-//    ----	function declaration   ----
 
 
 
-void write_student();	//write the record in binary file
-void display_all();	//read all records from binary file
-void display_sp(int);	//accept rollno and read record from binary file
-void modify_student(int);	//accept rollno and update record of binary file
-void delete_student(int);	//accept rollno and delete selected records from binary file
-void class_result();	//display all records in tabular format from binary file
-void result();		//display result menu
-void intro();		//display welcome screen
-void entry_menu();	//display entry menu on screen
+void write_student();	
+void display_all();	
+void display_sp(int);	
+void modify_student(int);	
+void delete_student(int);	
+void class_result();	
+void result();		
+void intro();		
+void entry_menu();	
 
 
 
-//   ---- 	THE MAIN FUNCTION OF PROGRAM    ----
 
 
 
@@ -147,7 +140,7 @@ int main()
 }
 
 
-//  ----  	function to write in file   ----
+
 
 
 void write_student()
@@ -164,7 +157,7 @@ void write_student()
 }
 
 
-//    ----	function to read all records from file   ----
+
 
 
 void display_all()
@@ -189,7 +182,7 @@ void display_all()
 }
 
 
-//   ---- 	function to read specific record from file  ----
+
   
 
 void display_sp(int n)
@@ -220,7 +213,7 @@ void display_sp(int n)
 }
 
 
-//   ---- 	function to modify record of file   ----
+
 
 
 void modify_student(int n)
@@ -256,7 +249,7 @@ void modify_student(int n)
 }
 
 
-//   ---- 	function to delete record of file     ----
+
 
 
 void delete_student(int n)
@@ -289,7 +282,7 @@ void delete_student(int n)
 }
 
 
-//    ----	function to display all students grade report   ----
+
 
 
 void class_result()
@@ -316,7 +309,7 @@ void class_result()
 }
 
 
-//  ----  	function to display result menu   ----
+
 
 
 void result()
@@ -342,7 +335,7 @@ void result()
 }
 
 
-//  ----  	INTRODUCTION FUNCTION     ----
+
 
 
 void intro()
@@ -357,7 +350,7 @@ void intro()
 }
 
 
-//    ----	ENTRY / EDIT MENU FUNCTION    ----
+
 
 
 void entry_menu()
@@ -391,5 +384,5 @@ void entry_menu()
 }
 
 
-//    		----	END OF PROJECT   ----
+
 
